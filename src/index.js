@@ -14,7 +14,7 @@ import AppTheme from './AppTheme.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<AppTheme />
+		<AppProducts />
 	</React.StrictMode>
 );
 
