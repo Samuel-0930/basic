@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-
+import { useImmer } from 'use-immer';
 export default function AppForm() {
-	const [form, setForm] = useState({ name: '', email: '' });
+	const [form, updateForm] = useImmer({ name: '', email: '' });
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
-		setForm({ ...form, [name]: value });
+		updateForm((form) => {
+			form[name] = value;
+			console.log('form.name: ', form.name);
+			console.log('form.email: ', form.email);
+		});
 	};
 	const handleSubmit = (e) => {
 		e.preventDefault();

@@ -7,11 +7,13 @@ import AppXY from './AppXY';
 import AppMentor from './AppMentor.jsx';
 import AppMentors from './AppMentors.jsx';
 import AppForm from './AppForm.jsx';
+import AppWrap from './AppWrap.jsx';
+import AppCard from './AppCard.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<AppForm />
+		<AppCard />
 	</React.StrictMode>
 );
 
